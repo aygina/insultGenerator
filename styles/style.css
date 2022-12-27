@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(147, 174, 213);
+}
+h2 {
+    color:rgb(72, 112, 169);
+
+}
+.wrapper {
+    max-width: 1160px;
+    max-height: 98%;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    background-color: white;
+}
+
+.form {
+    height: 98vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+
+.insult {
+    display: block;
+    border: 5px solid rgb(72, 112, 169);
+    border-style: dashed;
+    padding: 25px 25px 25px 25px;
+    color:rgb(72, 112, 169);
+    font-size: 2em;
+}
+
+button {
+    background: rgb(72, 112, 169);
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    width: 190px;
+    height: 34px;
+    cursor: pointer;    
+}
+
+button:hover {
+    opacity: 80%;
+}
