@@ -1,15 +1,16 @@
-const url = "https://evilinsult.com/generate_insult.php?lang=en&type=json&_=${Date.now()}";
+const url = "https://evilinsult.com/generate_insult.php?lang=en&type=json";
 
 fetch(url).then(response => response.json())
     .then(insult => {
-        document.getElementById("insult").innerHTML = insult.insult
+        document.getElementById("insult").innerHTML = insult.insult;
     })
     .catch(error => console.log(error));
 
 function getInsult() {
-    fetch(url).then(response => response.json())
+    newUrl = "https://evilinsult.com/generate_insult.php?lang=en&type=json&_=${Math.random()}"
+    fetch(newUrl).then(response => response.json())
         .then(insult => {
-            document.getElementById("insult").innerHTML = insult.insult
+            document.getElementById("insult").innerHTML = insult.insult;
         })
         .catch(error => console.log(error));
 }
